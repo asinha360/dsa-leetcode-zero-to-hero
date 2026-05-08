@@ -21,6 +21,17 @@ labeled `[UNVERIFIED PLACEHOLDER]` claim in `curriculum.md` and
 `REFERENCES.md` should be re-verified once web access is available.**
 This file is the consolidated worklist.
 
+### Re-attempt log
+- **2026-05-08 (post-init)** — Sub-agents re-spawned with the same two
+  prompts after the project's `permissions.allow` was updated to include
+  `WebSearch` / `WebFetch`. Both sub-agents again hit permission-denied
+  on every WebSearch / WebFetch call (the project-level allowlist does
+  not propagate to sub-agent contexts in this harness build). Main-agent
+  WebSearch *does* work — see step-3 verifications below — but sub-agent
+  re-research requires either a different harness or main-agent
+  hand-execution of the sub-agent prompts. Labels in curriculum.md left
+  unchanged for items 1–12 below.
+
 ---
 
 ## Quant firm interview content — to verify
@@ -109,6 +120,19 @@ rarely; verifying once at workspace start avoids drift.
     name written. The most likely drift candidates are: "Meeting Rooms"
     series (252/253 vs. premium gating), "Encode/Decode" series, and
     any problem in the LC#1–100 range that has been renamed.
+
+    **Step-3 audit (2026-05-08) — items resolved:**
+    - **LC#933 Number of Recent Calls** — `[VERIFIED]` at
+      https://leetcode.com/problems/number-of-recent-calls/. Caveat:
+      LeetCode rates this **Easy**, not Medium. Curriculum row W6 updated
+      to `[E]`. The W6 row therefore reads 2E + 1H rather than 1E + 1M +
+      1H — flagged a swap-in candidate (LC#622 Design Circular Queue) in
+      the curriculum entry.
+    - **LC#252 Meeting Rooms** — `[VERIFIED]` at
+      https://leetcode.com/problems/meeting-rooms/. Confirmed
+      **Premium-gated**. Curriculum row W16 annotated with free-tier
+      alternatives (LC#1854 Maximum Population Year, or hand-roll the
+      "can attend all meetings" check on LC#56's input shape).
 
 ---
 
