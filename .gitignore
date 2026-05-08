@@ -1,0 +1,24 @@
+# LeetCode local scratch
+.scratch/
+*.tmp
+*.swp
+
+# C++ build artifacts (in case the user compiles solutions locally)
+*.o
+*.out
+*.exe
+*.dSYM/
+a.out
+build/
+cmake-build-*/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
