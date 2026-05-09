@@ -33,6 +33,10 @@ the audit trail.
   research (memory-sourced with strict `[UNVERIFIED PLACEHOLDER]` labels —
   see REFERENCE_RESEARCH_QUEUE.md for items to verify when web access is
   restored).
+- **2026-05-08** — Setup session 2: curriculum labels upgraded to
+  [VERIFIED]/[UNVERIFIED PLACEHOLDER]/[TO RESEARCH] via two research
+  sub-agents (S1–S16). AGENTS.md updated (role 12 Prompt Engineer added).
+  Start/end session prompts drafted. No DSA problems attempted.
 
 ---
 
