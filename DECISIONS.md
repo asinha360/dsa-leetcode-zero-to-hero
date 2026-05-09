@@ -26,6 +26,19 @@ the C++ curriculum (driven by finance artifacts) under-exercises.
 the QR working language, and a parallel Python LeetCode track may be
 warranted. Until then, switching languages multiplies cognitive load.
 
+**Cross-reference (2026-05-08 research):** The 2026-05-08 sub-agent
+research [VERIFIED — see curriculum.md "Sources cited" S14, S15] that
+*no* prominent LeetCode-interview prep guide recommends C++ over Python.
+LeetCode community consensus prefers Python for terser syntax (lower
+implementation time per problem). C++-recommending sources are
+competitive-programming guides (USACO, Codeforces) where execution time
+is tight — different optimization than interview prep. **This does not
+flip D-001** because the rationale here is curriculum-compounding (the
+sister C++ project), not LeetCode-prep optimization. But it does mean
+the user should expect a *one-time* implementation-time penalty per
+problem vs. a Python-using peer, traded for STL fluency that compounds
+across both projects.
+
 ---
 
 ## D-002 — Scope: full top-tier quant coverage (10 categories, 20 weeks)
