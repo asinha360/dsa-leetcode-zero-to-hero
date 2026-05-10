@@ -49,6 +49,17 @@ probability analogies are safe. **Linear algebra fluency is not assumed**
 **Verify by:** if a calculus analogy lands without follow-up, the
 assumption holds. If it consistently doesn't, swap analogy domain.
 
+## A-009 — Zero DSA / algorithms knowledge at session start
+**Assumed:** User has no prior exposure to data structures or algorithms.
+Arrays, pointers, stacks, trees, graphs — all must be built from first
+principles. No assumed vocabulary. Every pattern intro begins with: what
+is the underlying data structure, why does it exist, and only then how
+is it used.
+**Verify by:** if the user demonstrates prior familiarity with a concept
+(names it correctly without scaffolding), note it in the session's
+`notes/wX_d1.md` and skip the first-principles intro for that concept.
+**Added:** 2026-05-10 (W1 Day 1, stated by user).
+
 ## A-008 — User cannot judge between QD / QR / SWE tracks yet
 **Assumed:** Track choice resolves around W12 (after Graphs II), based on
 which patterns clicked and which didn't. Until then, curriculum stays

@@ -1,19 +1,24 @@
 # PROGRESS
 
 ## Current state
-- **Phase:** Pre-W1 (workspace initialized 2026-05-08)
-- **Active week:** none yet
-- **Streak:** 0 weeks
+- **Phase:** W1 — Arrays + Two-pointer
+- **Active week:** W1 (started 2026-05-10)
+- **Streak:** 1 week
 - **Cumulative problems solved:** 0
-- **Last `/sync`:** initial commit
+- **Last `/sync`:** 2026-05-10
+
+## Next session
+**First action:** Open LC#125 on LeetCode. Before writing a single line of C++, state: (1) pattern, (2) target complexity, (3) approach. Then attempt solo for 30 min.
+**Retrieval question:** What property must an input have for two-pointer to work, and why? Give me an example of an input where two-pointer would fail.
+**Carry-forwards:** Option B approach for LC#125 designed (in-place skip, `isalnum()`, `while l < r`, O(1) space). LC#11 is second problem after LC#125.
 
 ## Today's artifact
+2026-05-10 — W1 Day 1: two-pointer intro from first principles. notes/w1_d1.md.
 2026-05-08 — workspace scaffolded; 20-week curriculum, templates, sync
 command, agents file, decisions/assumptions logged.
 
 ## Wins
-*(populate as concepts are retrieved cleanly for the first time — tag
-`[FIRST TIME]`)*
+- **2026-05-10** — Monotonicity as the general property enabling two-pointer elimination. `[FIRST TIME]` Named and defined correctly without scaffolding on the first ask.
 
 ---
 
@@ -21,7 +26,7 @@ command, agents file, decisions/assumptions logged.
 
 | Week | Pattern | Status | Started | Completed | Problems solved (LC#s) | Retrospective |
 |------|---------|--------|---------|-----------|------------------------|---------------|
-| 1 | Arrays + Two-pointer | not started | — | — | — | — |
+| 1 | Arrays + Two-pointer | in progress | 2026-05-10 | — | — | — |
 | 2 | Hash maps + Hash sets | not started | — | — | — | — |
 | 3 | Sliding window | not started | — | — | — | — |
 | 4 | Binary search (M1) | not started | — | — | — | — |
@@ -53,7 +58,7 @@ Format: `Week | Prompt 1 | Prompt 2 | Prompt 3 | Notes`. Score each 0–2:
 
 | Week | P1 | P2 | P3 | Notes |
 |------|----|----|----|-------|
-| 1 | — | — | — | — |
+| 1 | 2 | 2 | — | D1 closing (×2): "monotonicity" + failure example both clean, unprompted |
 | 2 | — | — | — | — |
 | 3 | — | — | — | — |
 | 4 | — | — | — | — |
