@@ -9,26 +9,24 @@ the audit trail.
 ---
 
 ## Now
-- **W1 Day 2 (1.5h)** — Solo attempt LC#125 Valid Palindrome + LC#11
-  Container With Most Water. 30 min each, no hints first. State pattern
-  and target complexity before writing any code. Option B (in-place skip)
-  approach already designed for LC#125 from Day 1.
+- **W1 Day 3 (0.5h)** — Retrieval practice: open PROGRESS.md, then answer
+  3 written closed-book prompts from W1 before opening LeetCode.
 
 ---
 
 ## Next
-1. **W1 Day 3 (0.5h)** — Retrieval practice: 3 written, closed-book prompts
-   from W1.
-3. **W1 Day 3 (0.5h)** — Retrieval practice: 3 written, closed-book prompts
-   from W1.
-4. **W1 Day 4 (1h)** — Solution review with Claude as Code Reviewer. User
+1. **W1 Day 4 (1h)** — Solution review with Claude as Code Reviewer. User
    derives complexity first; Claude confirms or corrects.
-5. **W1 Day 5 (0.5h)** — Acceptance test. Notes file `notes/w1_d5.md`.
+2. **W1 Day 5 (0.5h)** — Acceptance test. Notes file `notes/w1_d5.md`.
    Retrospective. PROGRESS.md update. Run `/sync`.
 
 ---
 
 ## Done
+- **2026-05-12** — W1 Day 2 complete. LC#125 Valid Palindrome (Accepted,
+  user confirmed, parallel session) + LC#11 Container With Most Water
+  (Accepted, 65/65, beats 100% C++ runtime). Both O(n) time O(1) space,
+  complexity derivations complete. notes/w1_d2.md created.
 - **2026-05-08** — Workspace initialized: 20-week curriculum scaffold,
   templates, agents config, git repo. Curriculum synthesized from
   research (memory-sourced with strict `[UNVERIFIED PLACEHOLDER]` labels —

@@ -4,20 +4,22 @@
 - **Phase:** W1 — Arrays + Two-pointer
 - **Active week:** W1 (started 2026-05-10)
 - **Streak:** 1 week
-- **Cumulative problems solved:** 0
-- **Last `/sync`:** 2026-05-10
+- **Cumulative problems solved:** 2
+- **Last `/sync`:** 2026-05-12
 
 ## Next session
-**First action:** Open LC#125 on LeetCode. Before writing a single line of C++, state: (1) pattern, (2) target complexity, (3) approach. Then attempt solo for 30 min.
-**Retrieval question:** What property must an input have for two-pointer to work, and why? Give me an example of an input where two-pointer would fail.
-**Carry-forwards:** Option B approach for LC#125 designed (in-place skip, `isalnum()`, `while l < r`, O(1) space). LC#11 is second problem after LC#125.
+**First action:** Open PROGRESS.md, then answer three written closed-book retrieval prompts from W1 before opening LeetCode.
+**Retrieval question:** When two pointers start at opposite ends and converge, what is the exit condition and why does it work for both odd- and even-length inputs?
+**Carry-forwards:** none
 
 ## Today's artifact
+2026-05-12 — W1 Day 2: LC#125 + LC#11 both Accepted. notes/w1_d2.md.
 2026-05-10 — W1 Day 1: two-pointer intro from first principles. notes/w1_d1.md.
 2026-05-08 — workspace scaffolded; 20-week curriculum, templates, sync
 command, agents file, decisions/assumptions logged.
 
 ## Wins
+- **2026-05-12** — "Moving the taller pointer can only lead to a smaller area" — correct reasoning for LC#11 pointer-move direction, self-stated. `[FIRST TIME]`
 - **2026-05-10** — Monotonicity as the general property enabling two-pointer elimination. `[FIRST TIME]` Named and defined correctly without scaffolding on the first ask.
 
 ---
@@ -26,7 +28,7 @@ command, agents file, decisions/assumptions logged.
 
 | Week | Pattern | Status | Started | Completed | Problems solved (LC#s) | Retrospective |
 |------|---------|--------|---------|-----------|------------------------|---------------|
-| 1 | Arrays + Two-pointer | in progress | 2026-05-10 | — | — | — |
+| 1 | Arrays + Two-pointer | in progress | 2026-05-10 | — | LC#125, LC#11 | — |
 | 2 | Hash maps + Hash sets | not started | — | — | — | — |
 | 3 | Sliding window | not started | — | — | — | — |
 | 4 | Binary search (M1) | not started | — | — | — | — |
@@ -58,7 +60,7 @@ Format: `Week | Prompt 1 | Prompt 2 | Prompt 3 | Notes`. Score each 0–2:
 
 | Week | P1 | P2 | P3 | Notes |
 |------|----|----|----|-------|
-| 1 | 2 | 2 | — | D1 closing (×2): "monotonicity" + failure example both clean, unprompted |
+| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean |
 | 2 | — | — | — | — |
 | 3 | — | — | — | — |
 | 4 | — | — | — | — |
