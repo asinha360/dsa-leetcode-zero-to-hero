@@ -61,7 +61,7 @@ Format: `Week | Prompt 1 | Prompt 2 | Prompt 3 | Notes`. Score each 0–2:
 
 | Week | P1 | P2 | P3 | Notes |
 |------|----|----|----|-------|
-| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean |
+| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean; D3 opening: all 3 prompts clean; D3 closing: 3Sum reduction + all 3 duplicate-suppression points clean |
 | 2 | — | — | — | — |
 | 3 | — | — | — | — |
 | 4 | — | — | — | — |
