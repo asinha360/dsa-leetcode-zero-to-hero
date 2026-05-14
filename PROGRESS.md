@@ -4,15 +4,16 @@
 - **Phase:** W1 — Arrays + Two-pointer
 - **Active week:** W1 (started 2026-05-10)
 - **Streak:** 1 week
-- **Cumulative problems solved:** 2
+- **Cumulative problems solved:** 3
 - **Last `/sync`:** 2026-05-12
 
 ## Next session
-**First action:** Open PROGRESS.md, then answer three written closed-book retrieval prompts from W1 before opening LeetCode.
-**Retrieval question:** When two pointers start at opposite ends and converge, what is the exit condition and why does it work for both odd- and even-length inputs?
+**First action:** W1 Day 4 — Code Reviewer mode. Paste all three W1 solutions; derive complexity for each before Claude reviews.
+**Retrieval question:** After sorting, why does fixing one element of a triplet reduce 3Sum to a problem you already know how to solve — and what are the three places duplicate suppression must fire?
 **Carry-forwards:** none
 
 ## Today's artifact
+2026-05-14 — W1 Day 3: retrieval practice (all 2s) + LC#15 3Sum Accepted (316/316). notes/w1_d3.md.
 2026-05-12 — W1 Day 2: LC#125 + LC#11 both Accepted. notes/w1_d2.md.
 2026-05-10 — W1 Day 1: two-pointer intro from first principles. notes/w1_d1.md.
 2026-05-08 — workspace scaffolded; 20-week curriculum, templates, sync
@@ -28,7 +29,7 @@ command, agents file, decisions/assumptions logged.
 
 | Week | Pattern | Status | Started | Completed | Problems solved (LC#s) | Retrospective |
 |------|---------|--------|---------|-----------|------------------------|---------------|
-| 1 | Arrays + Two-pointer | in progress | 2026-05-10 | — | LC#125, LC#11 | — |
+| 1 | Arrays + Two-pointer | in progress | 2026-05-10 | — | LC#125, LC#11, LC#15 | — |
 | 2 | Hash maps + Hash sets | not started | — | — | — | — |
 | 3 | Sliding window | not started | — | — | — | — |
 | 4 | Binary search (M1) | not started | — | — | — | — |

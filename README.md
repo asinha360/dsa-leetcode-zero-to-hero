@@ -125,7 +125,11 @@ before the user has attempted the problem themselves.
 
 **Week 1 of 20 — in progress (started 2026-05-10)**
 
-- Problems solved: 0
-- Concepts cleared (W1 D1): O(1) random access → O(n²) brute force →
-  monotonicity as the enabling property → O(n) two-pointer elimination.
-- Next: solo attempt on LC#125 Valid Palindrome + LC#11 Container With Most Water.
+| # | Problem | Difficulty | Verdict | Time | Space |
+|---|---------|------------|---------|------|-------|
+| 1 | LC#125 Valid Palindrome | Easy | Accepted (488/488) | O(n) | O(1) |
+| 2 | LC#11 Container With Most Water | Medium | Accepted (65/65, 100% runtime) | O(n) | O(1) |
+| 3 | LC#15 3Sum | Hard | Accepted (316/316) | O(n²) | O(log n) |
+
+- W1 D1–D3 complete. All three W1 problems solved.
+- Next: W1 Day 4 — solution review (Code Reviewer role).

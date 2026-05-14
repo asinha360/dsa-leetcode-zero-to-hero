@@ -9,20 +9,21 @@ the audit trail.
 ---
 
 ## Now
-- **W1 Day 3 (0.5h)** — Retrieval practice: open PROGRESS.md, then answer
-  3 written closed-book prompts from W1 before opening LeetCode.
+- **W1 Day 4 (1h)** — Solution review with Claude as Code Reviewer. User
+  derives complexity first; Claude confirms or corrects.
 
 ---
 
 ## Next
-1. **W1 Day 4 (1h)** — Solution review with Claude as Code Reviewer. User
-   derives complexity first; Claude confirms or corrects.
-2. **W1 Day 5 (0.5h)** — Acceptance test. Notes file `notes/w1_d5.md`.
+1. **W1 Day 5 (0.5h)** — Acceptance test. Notes file `notes/w1_d5.md`.
    Retrospective. PROGRESS.md update. Run `/sync`.
 
 ---
 
 ## Done
+- **2026-05-14** — W1 Day 3 complete. Retrieval practice: all 3 W1 prompts
+  scored 2. LC#15 3Sum (Accepted, 316/316). O(n²) time, O(log n) auxiliary
+  space. Duplicate suppression at outer loop + l + r. notes/w1_d3.md created.
 - **2026-05-12** — W1 Day 2 complete. LC#125 Valid Palindrome (Accepted,
   user confirmed, parallel session) + LC#11 Container With Most Water
   (Accepted, 65/65, beats 100% C++ runtime). Both O(n) time O(1) space,
