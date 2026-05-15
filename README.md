@@ -4,7 +4,7 @@ A 20-week, self-directed DSA / LeetCode curriculum built for a non-technical
 beginner targeting quant finance roles — quant developer, quant researcher, or
 SWE at a trading firm or hedge fund. All solutions are in C++.
 
-**Current status:** Week 1 of 20 — Arrays + Two-pointer (in progress)
+**Current status:** Week 1 of 20 — Arrays + Two-pointer (complete) | Week 2 of 20 — Hash maps + Hash sets (starting)
 
 ---
 
@@ -123,13 +123,16 @@ before the user has attempted the problem themselves.
 
 ## Progress snapshot
 
-**Week 1 of 20 — in progress (started 2026-05-10)**
+**Week 1 of 20 — complete (2026-05-10 → 2026-05-15)**
 
-| # | Problem | Difficulty | Verdict | Time | Space |
-|---|---------|------------|---------|------|-------|
+| # | Problem | Difficulty | Verdict | Time | Aux space |
+|---|---------|------------|---------|------|-----------|
 | 1 | LC#125 Valid Palindrome | Easy | Accepted (488/488) | O(n) | O(1) |
 | 2 | LC#11 Container With Most Water | Medium | Accepted (65/65, 100% runtime) | O(n) | O(1) |
 | 3 | LC#15 3Sum | Hard | Accepted (316/316) | O(n²) | O(log n) |
 
-- W1 D1–D3 complete. All three W1 problems solved.
-- Next: W1 Day 4 — solution review (Code Reviewer role).
+**Week 2 of 20 — starting | Hash maps + Hash sets**
+
+- W1 all five days complete. All three problems Accepted. No logic bugs.
+- Pattern owned: two-pointer + monotonicity. Retrieval score 2 across all W1 prompts (D3, D4); 1.5 on D5 per-problem breakdown.
+- Next: W2 Day 1 — hash map pattern intro from first principles.

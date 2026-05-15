@@ -1,19 +1,19 @@
 # PROGRESS
 
 ## Current state
-- **Phase:** W1 — Arrays + Two-pointer
-- **Active week:** W1 (started 2026-05-10)
+- **Phase:** W2 — Hash maps + Hash sets
+- **Active week:** W2 (starts next session)
 - **Streak:** 1 week
 - **Cumulative problems solved:** 3
-- **Last `/sync`:** 2026-05-12
+- **Last `/sync`:** 2026-05-15
 
 ## Next session
-**First action:** W1 Day 5 — Acceptance test + retrospective. Open PROGRESS.md and confirm all three W1 solutions Accepted. Write notes/w1_d5.md. Run `/sync`.
-**Retrieval question:** What is the one property all three W1 problems share that makes two-pointer valid — and name the preprocessing step each uses to establish it.
-**Carry-forwards:** auxiliary space vs. output space distinction; `static_cast<int>(container.size())` for signed/unsigned comparisons.
+**First action:** W2 Day 1 — Hash maps + Hash sets pattern intro. WHY first (intuition + analogy). One worked example, no keyboard.
+**Retrieval question (W1 spaced):** Name the preprocessing step each W1 problem uses to establish monotonicity — cold, no notes.
+**Carry-forwards:** `static_cast<int>(container.size())` on any signed loop index; per-problem instantiation of monotonicity (not just the label).
 
 ## Today's artifact
-2026-05-15 — W1 Day 4: code review complete. Two corrections issued. notes/w1_d4.md.
+2026-05-15 — W1 Day 5: acceptance test (all 3 Accepted), retrospective. notes/w1_d5.md.
 2026-05-14 — W1 Day 3: retrieval practice (all 2s) + LC#15 3Sum Accepted (316/316). notes/w1_d3.md.
 2026-05-12 — W1 Day 2: LC#125 + LC#11 both Accepted. notes/w1_d2.md.
 2026-05-10 — W1 Day 1: two-pointer intro from first principles. notes/w1_d1.md.
@@ -30,7 +30,7 @@ command, agents file, decisions/assumptions logged.
 
 | Week | Pattern | Status | Started | Completed | Problems solved (LC#s) | Retrospective |
 |------|---------|--------|---------|-----------|------------------------|---------------|
-| 1 | Arrays + Two-pointer | in progress | 2026-05-10 | — | LC#125, LC#11, LC#15 | — |
+| 1 | Arrays + Two-pointer | complete | 2026-05-10 | 2026-05-15 | LC#125, LC#11, LC#15 | Monotonicity core: solid. Per-problem instantiation: 1.5 on D5 (nudge needed for LC#11 vs LC#15 distinction). Carry-forward: `static_cast<int>(container.size())`. |
 | 2 | Hash maps + Hash sets | not started | — | — | — | — |
 | 3 | Sliding window | not started | — | — | — | — |
 | 4 | Binary search (M1) | not started | — | — | — | — |
@@ -62,7 +62,7 @@ Format: `Week | Prompt 1 | Prompt 2 | Prompt 3 | Notes`. Score each 0–2:
 
 | Week | P1 | P2 | P3 | Notes |
 |------|----|----|----|-------|
-| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean; D3 opening: all 3 prompts clean; D3 closing: 3Sum reduction + all 3 duplicate-suppression points clean |
+| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean; D3 opening: all 3 prompts clean; D3 closing: 3Sum reduction + all 3 duplicate-suppression points clean; D5 opening: 1.5 (per-problem breakdown needed two nudges); D5 closing: 2 (all three correct and unprompted) |
 | 2 | — | — | — | — |
 | 3 | — | — | — | — |
 | 4 | — | — | — | — |

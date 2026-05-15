@@ -9,8 +9,7 @@ the audit trail.
 ---
 
 ## Now
-- **W1 Day 5 (0.5h)** — Acceptance test. Notes file `notes/w1_d5.md`.
-   Retrospective. PROGRESS.md update. Run `/sync`.
+- **W2 Day 1 (1.0h)** — Hash maps + Hash sets pattern intro. WHY first. One worked example traced on paper, no keyboard. End with a check question.
 
 ---
 
@@ -20,6 +19,7 @@ the audit trail.
 ---
 
 ## Done
+- **2026-05-15** — W1 Day 5 complete. Acceptance test passed (all 3 Accepted). Retrospective done. notes/w1_d5.md created. PROGRESS.md updated. W1 marked complete.
 - **2026-05-15** — W1 Day 4 complete. Code review of LC#125, LC#11, LC#15. Two corrections: LC#15 space complexity (O(n²) output, O(log n) auxiliary — not O(1)); `i < nums.size()` signed/unsigned fix. No logic bugs. notes/w1_d4.md created.
 - **2026-05-14** — W1 Day 3 complete. Retrieval practice: all 3 W1 prompts
   scored 2. LC#15 3Sum (Accepted, 316/316). O(n²) time, O(log n) auxiliary
