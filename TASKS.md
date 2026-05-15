@@ -9,18 +9,18 @@ the audit trail.
 ---
 
 ## Now
-- **W1 Day 4 (1h)** — Solution review with Claude as Code Reviewer. User
-  derives complexity first; Claude confirms or corrects.
-
----
-
-## Next
-1. **W1 Day 5 (0.5h)** — Acceptance test. Notes file `notes/w1_d5.md`.
+- **W1 Day 5 (0.5h)** — Acceptance test. Notes file `notes/w1_d5.md`.
    Retrospective. PROGRESS.md update. Run `/sync`.
 
 ---
 
+## Next
+*(none)*
+
+---
+
 ## Done
+- **2026-05-15** — W1 Day 4 complete. Code review of LC#125, LC#11, LC#15. Two corrections: LC#15 space complexity (O(n²) output, O(log n) auxiliary — not O(1)); `i < nums.size()` signed/unsigned fix. No logic bugs. notes/w1_d4.md created.
 - **2026-05-14** — W1 Day 3 complete. Retrieval practice: all 3 W1 prompts
   scored 2. LC#15 3Sum (Accepted, 316/316). O(n²) time, O(log n) auxiliary
   space. Duplicate suppression at outer loop + l + r. notes/w1_d3.md created.

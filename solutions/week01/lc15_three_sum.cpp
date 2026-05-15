@@ -6,11 +6,11 @@ public:
 
         vector<vector<int>> triplets {};
 
-        for (int i = 0; i < nums.size(); i++){
+        for (int i = 0; i < static_cast<int>(nums.size()); i++){
 
             if (i > 0 && nums[i] == nums[i-1]) continue;
 
-            int target = - ( nums[ i ] ); int l = i + 1; int r = nums.size() - 1;
+            int target = - ( nums[ i ] ); int l = i + 1; int r = static_cast<int>(nums.size()) - 1;
 
             while ( l < r ) {
                 if ( nums[ l ] + nums[ r ] > target ) {

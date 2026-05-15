@@ -8,11 +8,12 @@
 - **Last `/sync`:** 2026-05-12
 
 ## Next session
-**First action:** W1 Day 4 — Code Reviewer mode. Paste all three W1 solutions; derive complexity for each before Claude reviews.
-**Retrieval question:** After sorting, why does fixing one element of a triplet reduce 3Sum to a problem you already know how to solve — and what are the three places duplicate suppression must fire?
-**Carry-forwards:** none
+**First action:** W1 Day 5 — Acceptance test + retrospective. Open PROGRESS.md and confirm all three W1 solutions Accepted. Write notes/w1_d5.md. Run `/sync`.
+**Retrieval question:** What is the one property all three W1 problems share that makes two-pointer valid — and name the preprocessing step each uses to establish it.
+**Carry-forwards:** auxiliary space vs. output space distinction; `static_cast<int>(container.size())` for signed/unsigned comparisons.
 
 ## Today's artifact
+2026-05-15 — W1 Day 4: code review complete. Two corrections issued. notes/w1_d4.md.
 2026-05-14 — W1 Day 3: retrieval practice (all 2s) + LC#15 3Sum Accepted (316/316). notes/w1_d3.md.
 2026-05-12 — W1 Day 2: LC#125 + LC#11 both Accepted. notes/w1_d2.md.
 2026-05-10 — W1 Day 1: two-pointer intro from first principles. notes/w1_d1.md.
