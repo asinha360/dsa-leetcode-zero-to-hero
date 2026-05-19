@@ -9,7 +9,7 @@ the audit trail.
 ---
 
 ## Now
-- **W2 Day 2 (1.5h)** — Solo attempt. State pattern + target complexity before writing a single line. LC#1 Two Sum [E] + LC#49 Group Anagrams [M]. 30 min each, no hints first. One directed hint per problem after 30 min.
+- **W2 Day 3 (0.5h)** — Retrieval practice. 3 prompts, written, closed-book. (a) LC#1: why does hash map turn O(n²) into O(n)? (b) LC#49: why O(n * k log k) and not O(n)? (c) W1 spaced: LC#15 monotone property cold. Then attempt LC#128 Longest Consecutive Sequence [H] if scores are clean.
 
 ---
 
@@ -19,6 +19,7 @@ the audit trail.
 ---
 
 ## Done
+- **2026-05-19** — W2 Day 2 complete. LC#1 Accepted (63/63), LC#49 Accepted (128/128). LC#125 carry-forward resolved (score 2, first time). Complexity correction on LC#49 (O(n*k log k)). notes/w2_d2.md created.
 - **2026-05-18** — W2 Day 1 complete. Hash maps + Hash sets intro. W1 retrieval: LC#11=2, LC#15=1.5 (one redirect), LC#125=1 (carry-forward). Final check: 1.5. notes/w2_d1.md created.
 - **2026-05-15** — W1 Day 5 complete. Acceptance test passed (all 3 Accepted). Retrospective done. notes/w1_d5.md created. PROGRESS.md updated. W1 marked complete.
 - **2026-05-15** — W1 Day 4 complete. Code review of LC#125, LC#11, LC#15. Two corrections: LC#15 space complexity (O(n²) output, O(log n) auxiliary — not O(1)); `i < nums.size()` signed/unsigned fix. No logic bugs. notes/w1_d4.md created.
