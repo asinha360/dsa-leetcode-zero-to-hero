@@ -2,17 +2,18 @@
 
 ## Current state
 - **Phase:** W2 — Hash maps + Hash sets
-- **Active week:** W2 (in progress — D2 complete)
+- **Active week:** W2 (in progress — D3 complete)
 - **Streak:** 1 week
-- **Cumulative problems solved:** 5
+- **Cumulative problems solved:** 6
 - **Last `/sync`:** 2026-05-15
 
 ## Next session
-**First action:** W2 D3 — retrieval practice (3 prompts, closed-book). Start with LC#1.
-**Retrieval question:** In one sentence, why does a hash map turn O(n²) into O(n)? (cold, no notes)
-**Carry-forwards:** `std::sort` is a free function returning void (high-friction — 4 iterations to land); pre-code complexity must account for inner-loop costs (O(k log k) per string ≠ O(n)).
+**First action:** W2 D4 — code review. Derive complexity for LC#1, LC#49, LC#128 cold, then Senior Engineer review.
+**Retrieval question:** For LC#128 — why is the time complexity O(n) even though there is a while loop inside a for loop?
+**Carry-forwards:** `set.find()` returns iterator (not bool) — recurs; `std::sort` free function (not method, returns void) — high-friction.
 
 ## Today's artifact
+2026-05-19 — W2 Day 3: retrieval practice (LC#1=2, LC#49=2, LC#15 spaced=1.5), LC#128 Accepted (85/85). notes/w2_d3.md.
 2026-05-19 — W2 Day 2: LC#1 Accepted (63/63), LC#49 Accepted (128/128). LC#125 carry-forward resolved (first clean retrieval). notes/w2_d2.md.
 2026-05-18 — W2 Day 1: hash map intro, W1 retrieval (LC#11=2, LC#15=1.5, LC#125=1). notes/w2_d1.md.
 2026-05-15 — W1 Day 5: acceptance test (all 3 Accepted), retrospective. notes/w1_d5.md.
@@ -66,7 +67,7 @@ Format: `Week | Prompt 1 | Prompt 2 | Prompt 3 | Notes`. Score each 0–2:
 | Week | P1 | P2 | P3 | Notes |
 |------|----|----|----|-------|
 | 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean; D3 opening: all 3 prompts clean; D3 closing: 3Sum reduction + all 3 duplicate-suppression points clean; D5 opening: 1.5 (per-problem breakdown needed two nudges); D5 closing: 2 (all three correct and unprompted); W2 D1 spaced opening: LC#11=2, LC#15=1.5 (one redirect — sorted-sum monotonicity), LC#125=1 (mechanism ≠ property); W2 D1 closing: LC#11=2, LC#15=2 (property stated unprompted — improvement), LC#125=1 (unchanged — third session at 1, must drill D3); W2 D2 opening: LC#125=2 (first clean retrieval — window shrinks monotonically, matched pairs permanently settled) `[FIRST TIME]`; W2 D2 closing: LC#125=2 (cold, no scaffolding — same answer retrieved cleanly at session end) |
-| 2 | — | — | — | W2 D2: LC#1 hash map vs two-pointer distinction (2 with one nudge on hash map side); LC#49 pre-code complexity correction (O(n*k log k) derived after one question). D3 retrieval prompts queued. |
+| 2 | 2 | 2 | — | W2 D2: LC#1 hash map vs two-pointer distinction (2 with one nudge on hash map side); LC#49 pre-code complexity correction (O(n*k log k) derived after one question). W2 D3: LC#1=2, LC#49=2. LC#128 Accepted (85/85), O(n) time/space derivation correct. |
 | 3 | — | — | — | — |
 | 4 | — | — | — | — |
 | 5 | — | — | — | — |

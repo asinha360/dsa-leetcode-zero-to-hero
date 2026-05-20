@@ -9,7 +9,7 @@ the audit trail.
 ---
 
 ## Now
-- **W2 Day 3 (0.5h)** — Retrieval practice. 3 prompts, written, closed-book. (a) LC#1: why does hash map turn O(n²) into O(n)? (b) LC#49: why O(n * k log k) and not O(n)? (c) W1 spaced: LC#15 monotone property cold. Then attempt LC#128 Longest Consecutive Sequence [H] if scores are clean.
+- **W2 Day 4 (1.0h)** — Code review. User derives complexity for LC#1, LC#49, LC#128 cold. Senior Engineer review of all three solutions. Focus: `set.find()` vs `set.contains()` idiom; `std::sort` free-function pattern.
 
 ---
 
@@ -19,6 +19,7 @@ the audit trail.
 ---
 
 ## Done
+- **2026-05-19** — W2 Day 3 complete. Retrieval: LC#1=2, LC#49=2, LC#15 spaced=1.5. LC#128 Accepted (85/85), O(n) time/O(n) space, derivation correct. notes/w2_d3.md created.
 - **2026-05-19** — W2 Day 2 complete. LC#1 Accepted (63/63), LC#49 Accepted (128/128). LC#125 carry-forward resolved (score 2, first time). Complexity correction on LC#49 (O(n*k log k)). notes/w2_d2.md created.
 - **2026-05-18** — W2 Day 1 complete. Hash maps + Hash sets intro. W1 retrieval: LC#11=2, LC#15=1.5 (one redirect), LC#125=1 (carry-forward). Final check: 1.5. notes/w2_d1.md created.
 - **2026-05-15** — W1 Day 5 complete. Acceptance test passed (all 3 Accepted). Retrospective done. notes/w1_d5.md created. PROGRESS.md updated. W1 marked complete.
