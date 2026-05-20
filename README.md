@@ -4,7 +4,7 @@ A 20-week, self-directed DSA / LeetCode curriculum built for a non-technical
 beginner targeting quant finance roles — quant developer, quant researcher, or
 SWE at a trading firm or hedge fund. All solutions are in C++.
 
-**Current status:** Week 1 of 20 — Arrays + Two-pointer (complete) | Week 2 of 20 — Hash maps + Hash sets (starting)
+**Current status:** Week 1 of 20 — Arrays + Two-pointer (complete) | Week 2 of 20 — Hash maps + Hash sets (D4 complete, D5 pending)
 
 ---
 
@@ -131,8 +131,14 @@ before the user has attempted the problem themselves.
 | 2 | LC#11 Container With Most Water | Medium | Accepted (65/65, 100% runtime) | O(n) | O(1) |
 | 3 | LC#15 3Sum | Hard | Accepted (316/316) | O(n²) | O(log n) |
 
-**Week 2 of 20 — starting | Hash maps + Hash sets**
+**Week 2 of 20 — in progress (D4 complete) | Hash maps + Hash sets**
 
-- W1 all five days complete. All three problems Accepted. No logic bugs.
-- Pattern owned: two-pointer + monotonicity. Retrieval score 2 across all W1 prompts (D3, D4); 1.5 on D5 per-problem breakdown.
-- Next: W2 Day 1 — hash map pattern intro from first principles.
+| # | Problem | Difficulty | Verdict | Time | Aux space |
+|---|---------|------------|---------|------|-----------|
+| 4 | LC#1 Two Sum | Easy | Accepted (63/63) | O(n) | O(n) |
+| 5 | LC#49 Group Anagrams | Medium | Accepted (128/128) | O(n · k log k) | O(n · k) |
+| 6 | LC#128 Longest Consecutive Sequence | Hard | Accepted (85/85) | O(n) | O(n) |
+
+- D1–D4 complete. All three problems Accepted. No logic bugs across any solution.
+- Pattern owned: hash map as O(1) lookup to eliminate O(n) inner scan; hash set for membership + sequence-start detection; amortized O(n) via each-element-visited-once argument.
+- Next: W2 Day 5 — acceptance test confirmation, retrospective, sync.

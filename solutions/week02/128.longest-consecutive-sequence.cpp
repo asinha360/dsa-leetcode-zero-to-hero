@@ -65,7 +65,7 @@ public:
                 while (set.contains(x+len)){
                     len++;
                 }
-            result = std::max(len, result);
+                result = std::max(len, result);
             }
         }
         return result;

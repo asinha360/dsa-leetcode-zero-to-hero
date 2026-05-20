@@ -10,13 +10,7 @@ public:
             std::string x_cpy = x;
             std::sort(x_cpy.begin(), x_cpy.end());
 
-            auto it = map.find(x_cpy);
-
-            if (it != map.end()){
-                it->second.push_back(x);
-            }   else    {
-                map[x_cpy] = {x};
-            }
+            map[x_cpy].push_back(x);
         }
         
         for (const auto& [key, value]: map){

@@ -10,7 +10,6 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
 
         std::unordered_map<int, int> map;
-        std::vector<int> result;
 
         for (int i = 0; i < static_cast<int>(nums.size()); i++){
 
@@ -18,8 +17,7 @@ public:
 
             if (key != map.end()){
                 
-                result.insert(result.end(), {i, key->second});
-                return result;
+                return {i, key->second};
                 
             }   else{
                 
@@ -28,7 +26,7 @@ public:
 
         }
         
-        return result;
+        return {};
 
     }
 };

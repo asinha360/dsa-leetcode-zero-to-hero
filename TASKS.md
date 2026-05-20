@@ -9,7 +9,9 @@ the audit trail.
 ---
 
 ## Now
-- **W2 Day 4 (1.0h)** — Code review. User derives complexity for LC#1, LC#49, LC#128 cold. Senior Engineer review of all three solutions. Focus: `set.find()` vs `set.contains()` idiom; `std::sort` free-function pattern.
+- **W2 Day 5 (0.5h)** — Open with LC#49 time complexity cold (full term: O(n · k log k) — can they state it unprompted?). Then acceptance test confirmation for LC#1, LC#49, LC#128. Retrospective. PROGRESS.md update. `/sync`.
+- **Carry-forward:** LC#49 time complexity collapsed twice — flag if dropped again.
+- **Note:** LC#15 inner-skip trigger scored 2 at session close (up from 1.5 at open). Still resurfaces at W3 D3 as scheduled.
 
 ---
 
@@ -19,6 +21,7 @@ the audit trail.
 ---
 
 ## Done
+- **2026-05-20** — W2 Day 4 complete. Code review of LC#1, LC#49, LC#128. Complexity derivations: LC#1 phrasing errors (no logic errors); LC#49 dropped k log k again (corrected); LC#128 amortized O(n) argument closed after probing. Carry-forward resolved: `set.contains()` clean, `std::sort` free function clean. notes/w2_d4.md created.
 - **2026-05-19** — W2 Day 3 complete. Retrieval: LC#1=2, LC#49=2, LC#15 spaced=1.5. LC#128 Accepted (85/85), O(n) time/O(n) space, derivation correct. notes/w2_d3.md created.
 - **2026-05-19** — W2 Day 2 complete. LC#1 Accepted (63/63), LC#49 Accepted (128/128). LC#125 carry-forward resolved (score 2, first time). Complexity correction on LC#49 (O(n*k log k)). notes/w2_d2.md created.
 - **2026-05-18** — W2 Day 1 complete. Hash maps + Hash sets intro. W1 retrieval: LC#11=2, LC#15=1.5 (one redirect), LC#125=1 (carry-forward). Final check: 1.5. notes/w2_d1.md created.
