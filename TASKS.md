@@ -9,18 +9,20 @@ the audit trail.
 ---
 
 ## Now
-- **W2 Day 5 (0.5h)** — Open with LC#49 time complexity cold (full term: O(n · k log k) — can they state it unprompted?). Then acceptance test confirmation for LC#1, LC#49, LC#128. Retrospective. PROGRESS.md update. `/sync`.
-- **Carry-forward:** LC#49 time complexity collapsed twice — flag if dropped again.
-- **Note:** LC#15 inner-skip trigger scored 2 at session close (up from 1.5 at open). Still resurfaces at W3 D3 as scheduled.
+- **W3 Day 1 (1.0h)** — Sliding window pattern intro. WHY first: what makes a window "slide" instead of restart? One worked example on paper. End with check question. Role: Learning Coach.
 
 ---
 
 ## Next
-*(none)*
+- **W3 Day 2 (1.5h)** — Solo attempt: LC#121 [E] and LC#3 [M]. No hints first 30 min. Enforce: state complexity before writing code.
+- **W3 Day 3 (0.5h)** — Retrieval: (a) sliding window fixed vs. variable; (b) spaced — LC#49 time complexity O(n·k log k); (c) spaced — LC#15 inner-skip trigger (sum==0 branch only).
+- **W3 Day 4 (1.0h)** — Code review. Complexity derivations (user first). STL fluency check: .find, .contains, .count usage.
+- **W3 Day 5 (0.5h)** — Acceptance test. Retrospective. PROGRESS.md. /sync.
 
 ---
 
 ## Done
+- **2026-05-21** — W2 Day 5 complete. Acceptance test: LC#1 (63/63), LC#49 (128/128), LC#128 (85/85) — all Accepted. LC#49 time complexity scored 2 (carry-forward finally closed). Retrospective done. W2 marked complete. notes/w2_d5.md created.
 - **2026-05-20** — W2 Day 4 complete. Code review of LC#1, LC#49, LC#128. Complexity derivations: LC#1 phrasing errors (no logic errors); LC#49 dropped k log k again (corrected); LC#128 amortized O(n) argument closed after probing. Carry-forward resolved: `set.contains()` clean, `std::sort` free function clean. notes/w2_d4.md created.
 - **2026-05-19** — W2 Day 3 complete. Retrieval: LC#1=2, LC#49=2, LC#15 spaced=1.5. LC#128 Accepted (85/85), O(n) time/O(n) space, derivation correct. notes/w2_d3.md created.
 - **2026-05-19** — W2 Day 2 complete. LC#1 Accepted (63/63), LC#49 Accepted (128/128). LC#125 carry-forward resolved (score 2, first time). Complexity correction on LC#49 (O(n*k log k)). notes/w2_d2.md created.
