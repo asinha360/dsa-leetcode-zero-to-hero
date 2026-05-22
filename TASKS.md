@@ -9,12 +9,11 @@ the audit trail.
 ---
 
 ## Now
-- **W3 Day 1 (1.0h)** — Sliding window pattern intro. WHY first: what makes a window "slide" instead of restart? One worked example on paper. End with check question. Role: Learning Coach.
+- **W3 Day 2 (1.5h)** — State pattern + target complexity for LC#121 before writing code. Solo attempt LC#121 [E] (30 min), then LC#3 [M] (30 min). No hints first 30 min per problem. Enforce: complexity stated aloud before every attempt.
 
 ---
 
 ## Next
-- **W3 Day 2 (1.5h)** — Solo attempt: LC#121 [E] and LC#3 [M]. No hints first 30 min. Enforce: state complexity before writing code.
 - **W3 Day 3 (0.5h)** — Retrieval: (a) sliding window fixed vs. variable; (b) spaced — LC#49 time complexity O(n·k log k); (c) spaced — LC#15 inner-skip trigger (sum==0 branch only).
 - **W3 Day 4 (1.0h)** — Code review. Complexity derivations (user first). STL fluency check: .find, .contains, .count usage.
 - **W3 Day 5 (0.5h)** — Acceptance test. Retrospective. PROGRESS.md. /sync.
@@ -22,6 +21,7 @@ the audit trail.
 ---
 
 ## Done
+- **2026-05-22** — W3 Day 1 complete. Sliding window pattern intro. Monotone property derived: permanently suboptimal buy day eliminated when l advances. LC#121 traced on paper; bug found and fixed (l=r not l++). W1 spaced retrieval (LC#15 inner-skip): score 1.5 open → corrected. notes/w3_d1.md created.
 - **2026-05-21** — W2 Day 5 complete. Acceptance test: LC#1 (63/63), LC#49 (128/128), LC#128 (85/85) — all Accepted. LC#49 time complexity scored 2 (carry-forward finally closed). Retrospective done. W2 marked complete. notes/w2_d5.md created.
 - **2026-05-20** — W2 Day 4 complete. Code review of LC#1, LC#49, LC#128. Complexity derivations: LC#1 phrasing errors (no logic errors); LC#49 dropped k log k again (corrected); LC#128 amortized O(n) argument closed after probing. Carry-forward resolved: `set.contains()` clean, `std::sort` free function clean. notes/w2_d4.md created.
 - **2026-05-19** — W2 Day 3 complete. Retrieval: LC#1=2, LC#49=2, LC#15 spaced=1.5. LC#128 Accepted (85/85), O(n) time/O(n) space, derivation correct. notes/w2_d3.md created.

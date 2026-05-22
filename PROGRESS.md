@@ -2,17 +2,18 @@
 
 ## Current state
 - **Phase:** W3 — Sliding window
-- **Active week:** W3 (not started)
-- **Streak:** 2 weeks
+- **Active week:** W3 (D1 complete)
+- **Streak:** 3 weeks
 - **Cumulative problems solved:** 6
-- **Last `/sync`:** 2026-05-21
+- **Last `/sync`:** 2026-05-22
 
 ## Next session
-**First action:** W3 D1 — sliding window pattern intro. WHY first: what makes a window "slide" instead of restart? One worked example traced on paper. End with check question.
-**Retrieval question (W3 D3 scheduled):** LC#49 full time complexity (O(n · k log k)); LC#15 inner-skip trigger (sum==0 branch only). Both were carry-forwards from W2 — resurface W3 D3.
-**Carry-forwards:** State complexity BEFORE writing code (new process habit — enforce at W3 D2). STL method fluency (.find, .contains, .count) — watch at W3 D4.
+**First action:** State pattern + target complexity for LC#121 before writing code, then solo attempt LC#121 [E] (30 min) then LC#3 [M] (30 min). No hints first 30 min per problem.
+**Retrieval question:** In LC#15 (3Sum), the inner duplicate-skip is a while-loop, not a single step. What does the while-loop condition check, and why is "move one step" insufficient? [FLAG — scored 1.5 twice; mechanism error persists]
+**Carry-forwards:** l=r not l++ for LC#121 (will surface at attempt); state complexity before code (enforce before every problem); LC#15 inner-skip mechanism (resurface W3 D3 as scheduled).
 
 ## Today's artifact
+2026-05-22 — W3 Day 1: sliding window pattern intro. Monotone property derived. LC#121 traced on paper (bug found: l=r not l++). W1 spaced retrieval LC#15 inner-skip: 1.5. notes/w3_d1.md.
 2026-05-21 — W2 Day 5: acceptance test (LC#1 63/63, LC#49 128/128, LC#128 85/85 — all Accepted). Retrospective. W2 complete. notes/w2_d5.md.
 2026-05-19 — W2 Day 3: retrieval practice (LC#1=2, LC#49=2, LC#15 spaced=1.5), LC#128 Accepted (85/85). notes/w2_d3.md.
 2026-05-19 — W2 Day 2: LC#1 Accepted (63/63), LC#49 Accepted (128/128). LC#125 carry-forward resolved (first clean retrieval). notes/w2_d2.md.
@@ -67,7 +68,7 @@ Format: `Week | Prompt 1 | Prompt 2 | Prompt 3 | Notes`. Score each 0–2:
 
 | Week | P1 | P2 | P3 | Notes |
 |------|----|----|----|-------|
-| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean; D3 opening: all 3 prompts clean; D3 closing: 3Sum reduction + all 3 duplicate-suppression points clean; D5 opening: 1.5 (per-problem breakdown needed two nudges); D5 closing: 2 (all three correct and unprompted); W2 D1 spaced opening: LC#11=2, LC#15=1.5 (one redirect — sorted-sum monotonicity), LC#125=1 (mechanism ≠ property); W2 D1 closing: LC#11=2, LC#15=2 (property stated unprompted — improvement), LC#125=1 (unchanged — third session at 1, must drill D3); W2 D2 opening: LC#125=2 (first clean retrieval — window shrinks monotonically, matched pairs permanently settled) `[FIRST TIME]`; W2 D2 closing: LC#125=2 (cold, no scaffolding — same answer retrieved cleanly at session end); W2 D4 spaced opening: LC#15 inner-skip trigger=1.5 (condition correct, trigger wrong — applied to all branches); W2 D4 closing: LC#15=2 (trigger correct: sum==0 only; reasoning given unprompted — "sum won't change, loop continues naturally") |
+| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean; D3 opening: all 3 prompts clean; D3 closing: 3Sum reduction + all 3 duplicate-suppression points clean; D5 opening: 1.5 (per-problem breakdown needed two nudges); D5 closing: 2 (all three correct and unprompted); W2 D1 spaced opening: LC#11=2, LC#15=1.5 (one redirect — sorted-sum monotonicity), LC#125=1 (mechanism ≠ property); W2 D1 closing: LC#11=2, LC#15=2 (property stated unprompted — improvement), LC#125=1 (unchanged — third session at 1, must drill D3); W2 D2 opening: LC#125=2 (first clean retrieval — window shrinks monotonically, matched pairs permanently settled) `[FIRST TIME]`; W2 D2 closing: LC#125=2 (cold, no scaffolding — same answer retrieved cleanly at session end); W2 D4 spaced opening: LC#15 inner-skip trigger=1.5 (condition correct, trigger wrong — applied to all branches); W2 D4 closing: LC#15=2 (trigger correct: sum==0 only; reasoning given unprompted — "sum won't change, loop continues naturally"); W3 D1 spaced opening: LC#15 inner-skip trigger=1.5 (condition correct, purpose correct, mechanism imprecise — "one step" vs while-loop; why-not-other-branches correct unprompted); W3 D1 closing: LC#15=1.5 (same error — mechanism still "one step"; condition/purpose/why-not-other-branches all correct; FLAG — resurface W3 D2 open) |
 | 2 | 2 | 2 | — | W2 D2: LC#1 hash map vs two-pointer distinction (2 with one nudge on hash map side); LC#49 pre-code complexity correction (O(n*k log k) derived after one question). W2 D3: LC#1=2, LC#49=2. LC#128 Accepted (85/85), O(n) time/space derivation correct. W2 D4 cold: LC#49 dropped k log k again (second time — flagged); LC#128 amortized O(n) argument closed after probing ("at max once"). `set.contains()` and `std::sort` carry-forwards resolved in code. W2 D5 open: LC#49 time complexity = 2 (O(n·k log k) unprompted — carry-forward finally closed); space = 1.5 (self-corrected after probe). W2 D5 close: LC#49 time complexity = 2 (clean, unprompted — "additive, not encapsulated in O(n)"). |
 | 3 | — | — | — | — |
 | 4 | — | — | — | — |
