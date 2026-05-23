@@ -1,6 +1,11 @@
 Session is ending. Execute the closing sequence in order, confirming each
 step before moving to the next.
 
+Step 0 — Disable session-file write guard.
+Run this Bash command before any file writes:
+  sed -i '' 's/^enabled: true/enabled: false/' .claude/hookify.block-session-files.local.md
+Confirm the command succeeded (exit 0) before continuing.
+
 Step 1 — Audit what happened.
 Read TASKS.md and the session's notes file (notes/wX_dY.md if it exists).
 List in one sentence each: what was attempted, what was completed, what
@@ -120,6 +125,11 @@ Step 7 — Run /sync.
 Commit and push all changed files. Do not skip this step. Do not ask
 whether to run it — just run it.
 
+Step 8 — Re-enable session-file write guard.
+Run this Bash command after /sync completes:
+  sed -i '' 's/^enabled: false/enabled: true/' .claude/hookify.block-session-files.local.md
+Confirm the command succeeded (exit 0). This is the final step — do not skip it.
+
 Constraints:
 - Do not invent content. Read the files; summarize what actually happened.
 - Do not mark a problem Done if it lacks an Accepted verdict or a
@@ -128,5 +138,5 @@ Constraints:
   tree should be clean and pushed at the end of every session.
 
 Verification:
-- After /sync, confirm: working tree is clean, all files updated, commit
-  hash visible. That is "done."
+- After Step 8, confirm: working tree is clean, all files updated, commit
+  hash visible, guard re-enabled. That is "done."

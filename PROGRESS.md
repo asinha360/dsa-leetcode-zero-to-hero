@@ -2,17 +2,18 @@
 
 ## Current state
 - **Phase:** W3 — Sliding window
-- **Active week:** W3 (D2 complete)
+- **Active week:** W3 (D3 complete)
 - **Streak:** 3 weeks
 - **Cumulative problems solved:** 7
 - **Last `/sync`:** 2026-05-22
 
 ## Next session
-**First action:** W3 Day 3 retrieval — open cold: confirm LC#121 Accepted, then (a) fixed vs. variable window — when do you shrink?; (b) LC#3 while condition and why s[l] breaks it; (c) LC#15 inner-skip exact boolean and why one step is wrong.
-**Retrieval question:** In LC#3, when a duplicate is found at position r, the inner while loop shrinks from the left. What is the exact condition — and why does checking s[l] instead of s[r] break the algorithm?
-**Carry-forwards:** LC#121 Accepted unconfirmed (confirm at D3 open); LC#15 inner-skip mechanism (four sessions at 1.5 — drill harder at D3, not just one ask); LC#3 hashmap std::max(l,...) — why std::max protects against backward jumps (not probed D2).
+**First action:** W3 Day 4 — open cold with LC#3 s[l] retrieval (invariant framing: s[l] always in set → loop over-shrinks, not stalls). Score must be 2 before code review begins. Then code review LC#121 and LC#3; user derives complexity first. STL fluency: `.find` vs `.contains` vs `.count`.
+**Retrieval question:** In LC#3's hashset version, why does `while (set.contains(s[l]))` over-shrink the window instead of stalling it? What invariant does this violate?
+**Carry-forwards:** LC#3 s[l] over-shrink mechanism (two sessions at 1.5 — closing score reverted to "stalls"; must close at D4); LC#121 `int max` shadowing + signed/unsigned flag for code review.
 
 ## Today's artifact
+2026-05-23 — W3 Day 3: retrieval practice. LC#121 Accepted confirmed (212/212, 0ms). LC#3 s[l] mechanism: 1.5. LC#15 inner-skip: 2 [FIRST TIME] (four sessions to close). LC#3 std::max backward-jump: 1 (two redirects, invariant identified). notes/w3_d3.md.
 2026-05-22 — W3 Day 2: solo attempts LC#121 (solution derived, Accepted unconfirmed — carry-forward) and LC#3 (Accepted 988/988, hashset + hashmap optimization). O(n) derivations correct. W1 spaced retrieval LC#15 inner-skip: 1.5 (third session). notes/w3_d2.md.
 2026-05-22 — W3 Day 1: sliding window pattern intro. Monotone property derived. LC#121 traced on paper (bug found: l=r not l++). W1 spaced retrieval LC#15 inner-skip: 1.5. notes/w3_d1.md.
 2026-05-21 — W2 Day 5: acceptance test (LC#1 63/63, LC#49 128/128, LC#128 85/85 — all Accepted). Retrospective. W2 complete. notes/w2_d5.md.
@@ -27,6 +28,7 @@
 command, agents file, decisions/assumptions logged.
 
 ## Wins
+- **2026-05-23** — LC#15 inner-skip: condition (`nums[l]==nums[l-1]` / `nums[r]==nums[r+1]`) + why while loop ("many duplicates adjacent — keep moving until next unique element") — both clean, no scaffolding. Four sessions at 1.5 before closing. `[FIRST TIME]`
 - **2026-05-22** — LC#3 O(n) time derivation: "each character is added and removed at most once" — stated cold, no scaffolding. `[FIRST TIME]`
 - **2026-05-19** — LC#125 monotone property retrieved cleanly for the first time (third session — window shrinks monotonically, matched pairs permanently settled). `[FIRST TIME]`
 - **2026-05-12** — "Moving the taller pointer can only lead to a smaller area" — correct reasoning for LC#11 pointer-move direction, self-stated. `[FIRST TIME]`
@@ -40,7 +42,7 @@ command, agents file, decisions/assumptions logged.
 |------|---------|--------|---------|-----------|------------------------|---------------|
 | 1 | Arrays + Two-pointer | complete | 2026-05-10 | 2026-05-15 | LC#125, LC#11, LC#15 | Monotonicity core: solid. Per-problem instantiation: 1.5 on D5 (nudge needed for LC#11 vs LC#15 distinction). Carry-forward: `static_cast<int>(container.size())`. |
 | 2 | Hash maps + Hash sets | complete | 2026-05-18 | 2026-05-21 | LC#1, LC#49, LC#128 | k log k synthesis gap resolved by D5. Amortized O(n) for LC#128 closed. STL syntax (.contains, sort) resolved. Process carry-forward: state complexity before code. |
-| 3 | Sliding window | in progress | 2026-05-22 | — | LC#3 (LC#121 unconfirmed) | — |
+| 3 | Sliding window | in progress | 2026-05-22 | — | LC#3, LC#121 | — |
 | 4 | Binary search (M1) | not started | — | — | — | — |
 | 5 | Stacks | not started | — | — | — | — |
 | 6 | Queues + monotonic queue | not started | — | — | — | — |
@@ -70,9 +72,9 @@ Format: `Week | Prompt 1 | Prompt 2 | Prompt 3 | Notes`. Score each 0–2:
 
 | Week | P1 | P2 | P3 | Notes |
 |------|----|----|----|-------|
-| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean; D3 opening: all 3 prompts clean; D3 closing: 3Sum reduction + all 3 duplicate-suppression points clean; D5 opening: 1.5 (per-problem breakdown needed two nudges); D5 closing: 2 (all three correct and unprompted); W2 D1 spaced opening: LC#11=2, LC#15=1.5 (one redirect — sorted-sum monotonicity), LC#125=1 (mechanism ≠ property); W2 D1 closing: LC#11=2, LC#15=2 (property stated unprompted — improvement), LC#125=1 (unchanged — third session at 1, must drill D3); W2 D2 opening: LC#125=2 (first clean retrieval — window shrinks monotonically, matched pairs permanently settled) `[FIRST TIME]`; W2 D2 closing: LC#125=2 (cold, no scaffolding — same answer retrieved cleanly at session end); W2 D4 spaced opening: LC#15 inner-skip trigger=1.5 (condition correct, trigger wrong — applied to all branches); W2 D4 closing: LC#15=2 (trigger correct: sum==0 only; reasoning given unprompted — "sum won't change, loop continues naturally"); W3 D1 spaced opening: LC#15 inner-skip trigger=1.5 (condition correct, purpose correct, mechanism imprecise — "one step" vs while-loop; why-not-other-branches correct unprompted); W3 D1 closing: LC#15=1.5 (same error — mechanism still "one step"; condition/purpose/why-not-other-branches all correct; FLAG — resurface W3 D2 open); W3 D2 open: LC#15=1.5 (condition wrong twice — stated nums[l]==nums[l++] first [UB], then nums[l]==nums[l-1], correct nums[l]==nums[l-1]/nums[r]==nums[r+1] after two redirects; purpose/why-not-other-branches correct from start; FLAG); W3 D2 close: LC#15=1.5 (condition now clean and unprompted — improvement; "why" thin: "might require multiple moves" correct but imprecise — missing: after one step you may still be on same-value element; FLAG weakened but resurface D3) |
+| 1 | 2 | 2 | 2 | D1 closing (×2): "monotonicity" + failure example both clean; D2 closing: exit condition + exhaustiveness argument, clean; D3 opening: all 3 prompts clean; D3 closing: 3Sum reduction + all 3 duplicate-suppression points clean; D5 opening: 1.5 (per-problem breakdown needed two nudges); D5 closing: 2 (all three correct and unprompted); W2 D1 spaced opening: LC#11=2, LC#15=1.5 (one redirect — sorted-sum monotonicity), LC#125=1 (mechanism ≠ property); W2 D1 closing: LC#11=2, LC#15=2 (property stated unprompted — improvement), LC#125=1 (unchanged — third session at 1, must drill D3); W2 D2 opening: LC#125=2 (first clean retrieval — window shrinks monotonically, matched pairs permanently settled) `[FIRST TIME]`; W2 D2 closing: LC#125=2 (cold, no scaffolding — same answer retrieved cleanly at session end); W2 D4 spaced opening: LC#15 inner-skip trigger=1.5 (condition correct, trigger wrong — applied to all branches); W2 D4 closing: LC#15=2 (trigger correct: sum==0 only; reasoning given unprompted — "sum won't change, loop continues naturally"); W3 D1 spaced opening: LC#15 inner-skip trigger=1.5 (condition correct, purpose correct, mechanism imprecise — "one step" vs while-loop; why-not-other-branches correct unprompted); W3 D1 closing: LC#15=1.5 (same error — mechanism still "one step"; condition/purpose/why-not-other-branches all correct; FLAG — resurface W3 D2 open); W3 D2 open: LC#15=1.5 (condition wrong twice — stated nums[l]==nums[l++] first [UB], then nums[l]==nums[l-1], correct nums[l]==nums[l-1]/nums[r]==nums[r+1] after two redirects; purpose/why-not-other-branches correct from start; FLAG); W3 D2 close: LC#15=1.5 (condition now clean and unprompted — improvement; "why" thin: "might require multiple moves" correct but imprecise — missing: after one step you may still be on same-value element; FLAG weakened but resurface D3); W3 D3 open: LC#15=2 `[FIRST TIME]` (both conditions clean; "many duplicates could exist adjacent — keep moving until next unique element" — captures the missing insight; four sessions to close) |
 | 2 | 2 | 2 | — | W2 D2: LC#1 hash map vs two-pointer distinction (2 with one nudge on hash map side); LC#49 pre-code complexity correction (O(n*k log k) derived after one question). W2 D3: LC#1=2, LC#49=2. LC#128 Accepted (85/85), O(n) time/space derivation correct. W2 D4 cold: LC#49 dropped k log k again (second time — flagged); LC#128 amortized O(n) argument closed after probing ("at max once"). `set.contains()` and `std::sort` carry-forwards resolved in code. W2 D5 open: LC#49 time complexity = 2 (O(n·k log k) unprompted — carry-forward finally closed); space = 1.5 (self-corrected after probe). W2 D5 close: LC#49 time complexity = 2 (clean, unprompted — "additive, not encapsulated in O(n)"). |
-| 3 | — | — | — | — |
+| 3 | 1.5 | 2 | 1 | W3 D3 open: LC#3 s[l] mechanism=1.5 (condition correct, mechanism wrong — said "stalls" when loop actually over-shrinks; s[l] always in set); LC#15 inner-skip=2 `[FIRST TIME]` (both conditions + why while loop clean — four sessions to close); LC#3 std::max backward-jump=1 (identified wrong value after two redirects, invariant named after prompt). W3 D3 close: LC#3 s[l] mechanism=1.5 (same error — "stalls / pointers cannot move"; session trace got user to self-state "b is duplicated" but over-shrink framing did not persist; FLAG — must open D4 cold before code review). |
 | 4 | — | — | — | — |
 | 5 | — | — | — | — |
 | 6 | — | — | — | — |

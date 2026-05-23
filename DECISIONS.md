@@ -99,3 +99,15 @@ history. The user controls when changes are publishable.
 **Flip-condition:** The user reports forgetting to sync 3+ times. At that
 point, add a `Stop` hook that *prompts* (not auto-commits) — "Session
 ending, run /sync?"
+
+---
+
+## D-005 — Session-file enforcement: hookify block rule (not model compliance)
+
+**Decided:** 2026-05-23
+
+**What:** PROGRESS.md, TASKS.md, DECISIONS.md, and notes/wX_dY.md are write-protected during sessions via a hookify PreToolUse block rule (`.claude/hookify.block-session-files.local.md`). Writes to those files are rejected by the harness unless /end has explicitly disabled the guard. /end disables the rule at Step 0 and re-enables it at Step 8.
+
+**Rationale:** CLAUDE.md section 12 already prohibited mid-session writes. Claude violated it anyway. A rule Claude can override in a long session is a suggestion, not a constraint. Hookify fires at the harness level — it cannot be overridden by model reasoning within the session.
+
+**Flip-condition:** If the /end disable/re-enable mechanism proves brittle (e.g., /end crashes between Step 0 and Step 8, leaving the guard disabled), revisit. Alternative: a flag-file check if hookify adds filesystem-condition support. Or: a stop hook that re-enables the guard automatically on session end regardless of whether /end completed cleanly.

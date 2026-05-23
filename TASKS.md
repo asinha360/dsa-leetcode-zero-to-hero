@@ -9,17 +9,17 @@ the audit trail.
 ---
 
 ## Now
-- **W3 Day 3 (0.5h)** — Confirm LC#121 Accepted verdict first. Retrieval cold: (a) fixed vs. variable window — when do you shrink?; (b) LC#3 — state exact while condition and why s[l] breaks it; (c) LC#15 inner-skip — exact boolean and why one step insufficient; (d) LC#49 time complexity O(n·k log k).
+- **W3 Day 4 (1.0h)** — Open cold with LC#3 s[l] retrieval (must score 2 before code review begins). Then code review LC#121 and LC#3; user derives complexity first. STL fluency: `.find` vs `.contains` vs `.count`.
 
 ---
 
 ## Next
-- **W3 Day 4 (1.0h)** — Code review. Complexity derivations (user first). STL fluency check: .find, .contains, .count usage.
 - **W3 Day 5 (0.5h)** — Acceptance test. Retrospective. PROGRESS.md. /sync.
 
 ---
 
 ## Done
+- **2026-05-23** — W3 Day 3 complete. LC#121 Accepted confirmed (212/212, 0ms, 100% runtime). Retrieval: LC#3 s[l] mechanism=1.5, LC#15 inner-skip=2 [FIRST TIME] (four sessions to close), LC#3 std::max backward-jump=1. notes/w3_d3.md created.
 - **2026-05-22** — W3 Day 2 complete. LC#121 correct solution derived (Accepted unconfirmed — carry-forward to D3). LC#3 Accepted 988/988 — hashset (21ms) and hashmap optimization (4ms, 73rd percentile). Complexity derivations correct on both. notes/w3_d2.md created.
 - **2026-05-22** — W3 Day 1 complete. Sliding window pattern intro. Monotone property derived: permanently suboptimal buy day eliminated when l advances. LC#121 traced on paper; bug found and fixed (l=r not l++). W1 spaced retrieval (LC#15 inner-skip): score 1.5 open → corrected. notes/w3_d1.md created.
 - **2026-05-21** — W2 Day 5 complete. Acceptance test: LC#1 (63/63), LC#49 (128/128), LC#128 (85/85) — all Accepted. LC#49 time complexity scored 2 (carry-forward finally closed). Retrospective done. W2 marked complete. notes/w2_d5.md created.
