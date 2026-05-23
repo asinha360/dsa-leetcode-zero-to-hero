@@ -9,18 +9,18 @@ the audit trail.
 ---
 
 ## Now
-- **W3 Day 2 (1.5h)** — State pattern + target complexity for LC#121 before writing code. Solo attempt LC#121 [E] (30 min), then LC#3 [M] (30 min). No hints first 30 min per problem. Enforce: complexity stated aloud before every attempt.
+- **W3 Day 3 (0.5h)** — Confirm LC#121 Accepted verdict first. Retrieval cold: (a) fixed vs. variable window — when do you shrink?; (b) LC#3 — state exact while condition and why s[l] breaks it; (c) LC#15 inner-skip — exact boolean and why one step insufficient; (d) LC#49 time complexity O(n·k log k).
 
 ---
 
 ## Next
-- **W3 Day 3 (0.5h)** — Retrieval: (a) sliding window fixed vs. variable; (b) spaced — LC#49 time complexity O(n·k log k); (c) spaced — LC#15 inner-skip trigger (sum==0 branch only).
 - **W3 Day 4 (1.0h)** — Code review. Complexity derivations (user first). STL fluency check: .find, .contains, .count usage.
 - **W3 Day 5 (0.5h)** — Acceptance test. Retrospective. PROGRESS.md. /sync.
 
 ---
 
 ## Done
+- **2026-05-22** — W3 Day 2 complete. LC#121 correct solution derived (Accepted unconfirmed — carry-forward to D3). LC#3 Accepted 988/988 — hashset (21ms) and hashmap optimization (4ms, 73rd percentile). Complexity derivations correct on both. notes/w3_d2.md created.
 - **2026-05-22** — W3 Day 1 complete. Sliding window pattern intro. Monotone property derived: permanently suboptimal buy day eliminated when l advances. LC#121 traced on paper; bug found and fixed (l=r not l++). W1 spaced retrieval (LC#15 inner-skip): score 1.5 open → corrected. notes/w3_d1.md created.
 - **2026-05-21** — W2 Day 5 complete. Acceptance test: LC#1 (63/63), LC#49 (128/128), LC#128 (85/85) — all Accepted. LC#49 time complexity scored 2 (carry-forward finally closed). Retrospective done. W2 marked complete. notes/w2_d5.md created.
 - **2026-05-20** — W2 Day 4 complete. Code review of LC#1, LC#49, LC#128. Complexity derivations: LC#1 phrasing errors (no logic errors); LC#49 dropped k log k again (corrected); LC#128 amortized O(n) argument closed after probing. Carry-forward resolved: `set.contains()` clean, `std::sort` free function clean. notes/w2_d4.md created.

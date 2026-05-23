@@ -109,7 +109,7 @@ at LeetCode problem numbers — if uncertain, write `LC#??? — [name]
 time and erodes trust.
 
 ## 12. Logging your work
-After every session, without being asked:
+Only when `/end` is invoked — do not do this automatically at session end:
 - Update `TASKS.md` (move items between Now / Next / Done / Blocked).
 - Auto-create `notes/wX_dY.md` for the session — even if 3 lines.
 - Tag `[FIRST TIME]` in `PROGRESS.md` for any concept retrieved cleanly
