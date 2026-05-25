@@ -9,7 +9,7 @@ the audit trail.
 ---
 
 ## Now
-- **W3 Day 5 (0.5h)** — Open cold with LC#3 s[l] over-shrink question (must score 2 before acceptance test begins). Then acceptance test LC#121 and LC#3 (re-run on LeetCode to confirm fixes pass). Retrospective. /end.
+- **W4 Day 1 (1h)** — Binary search pattern intro from first principles. Before session, re-read the YTM bisection solver from cpp-finance-zero-to-hero to activate the curriculum overlap. No keyboard until loop invariant (`l ≤ r` vs `l < r`) and mid calculation are traced on paper.
 
 ---
 
@@ -19,6 +19,7 @@ the audit trail.
 ---
 
 ## Done
+- **2026-05-25** — W3 Day 5 complete. Acceptance test: LC#121 (212/212, 0ms, 100% runtime) and LC#3 (988/988, 7ms) — both Accepted. Retrieval: W3 P1 s[l] over-shrink=2 [FIRST TIME] (set-mirrors-window invariant stated cold — four sessions to close). Retrospective done. Interview coding loop process change logged (D-006). README updated. W3 marked complete. notes/w3_d5.md created.
 - **2026-05-24** — W3 Day 4 complete. Code review LC#3 and LC#121. Blocking fixes: signed/unsigned `static_cast<int>(s.size())` (recurring — 3rd time) and variable shadowing (`map`→`char_pos`, `max`→`max_profit`). STL fluency: `.count`/`.find`/`.contains` answered. Retrieval: W3 P1 s[l] over-shrink=1.5 (full explanation given; invariant understood but not cold); W1 LC#11 pointer direction=2 (one nudge). notes/w3_d4.md created.
 - **2026-05-23** — W3 Day 3 complete. LC#121 Accepted confirmed (212/212, 0ms, 100% runtime). Retrieval: LC#3 s[l] mechanism=1.5, LC#15 inner-skip=2 [FIRST TIME] (four sessions to close), LC#3 std::max backward-jump=1. notes/w3_d3.md created.
 - **2026-05-22** — W3 Day 2 complete. LC#121 correct solution derived (Accepted unconfirmed — carry-forward to D3). LC#3 Accepted 988/988 — hashset (21ms) and hashmap optimization (4ms, 73rd percentile). Complexity derivations correct on both. notes/w3_d2.md created.

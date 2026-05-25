@@ -4,7 +4,7 @@ A 20-week, self-directed DSA / LeetCode curriculum built for a non-technical
 beginner targeting quant finance roles — quant developer, quant researcher, or
 SWE at a trading firm or hedge fund. All solutions are in C++.
 
-**Current status:** Week 1 of 20 — Arrays + Two-pointer (complete) | Week 2 of 20 — Hash maps + Hash sets (D4 complete, D5 pending)
+**Current status:** Week 3 of 20 — Sliding window (complete) | Week 4 of 20 — Binary search (starting)
 
 ---
 
@@ -131,7 +131,7 @@ before the user has attempted the problem themselves.
 | 2 | LC#11 Container With Most Water | Medium | Accepted (65/65, 100% runtime) | O(n) | O(1) |
 | 3 | LC#15 3Sum | Hard | Accepted (316/316) | O(n²) | O(log n) |
 
-**Week 2 of 20 — in progress (D4 complete) | Hash maps + Hash sets**
+**Week 2 of 20 — complete (2026-05-18 → 2026-05-21) | Hash maps + Hash sets**
 
 | # | Problem | Difficulty | Verdict | Time | Aux space |
 |---|---------|------------|---------|------|-----------|
@@ -139,6 +139,14 @@ before the user has attempted the problem themselves.
 | 5 | LC#49 Group Anagrams | Medium | Accepted (128/128) | O(n · k log k) | O(n · k) |
 | 6 | LC#128 Longest Consecutive Sequence | Hard | Accepted (85/85) | O(n) | O(n) |
 
-- D1–D4 complete. All three problems Accepted. No logic bugs across any solution.
 - Pattern owned: hash map as O(1) lookup to eliminate O(n) inner scan; hash set for membership + sequence-start detection; amortized O(n) via each-element-visited-once argument.
-- Next: W2 Day 5 — acceptance test confirmation, retrospective, sync.
+
+**Week 3 of 20 — complete (2026-05-22 → 2026-05-25) | Sliding window**
+
+| # | Problem | Difficulty | Verdict | Time | Aux space |
+|---|---------|------------|---------|------|-----------|
+| 7 | LC#121 Best Time to Buy and Sell Stock | Easy | Accepted (212/212, 100% runtime) | O(n) | O(1) |
+| 8 | LC#3 Longest Substring Without Repeating Characters | Medium | Accepted (988/988) | O(n) | O(n) |
+
+- Pattern owned: variable-length sliding window with hash set/map to track window state; shrink condition driven by window invariant violation; running max/length updated each step.
+- LC#76 Minimum Window Substring (Hard) deferred to W4+ spaced retrieval.

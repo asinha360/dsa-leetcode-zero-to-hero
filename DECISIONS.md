@@ -111,3 +111,27 @@ ending, run /sync?"
 **Rationale:** CLAUDE.md section 12 already prohibited mid-session writes. Claude violated it anyway. A rule Claude can override in a long session is a suggestion, not a constraint. Hookify fires at the harness level — it cannot be overridden by model reasoning within the session.
 
 **Flip-condition:** If the /end disable/re-enable mechanism proves brittle (e.g., /end crashes between Step 0 and Step 8, leaving the guard disabled), revisit. Alternative: a flag-file check if hookify adds filesystem-condition support. Or: a stop hook that re-enables the guard automatically on session end regardless of whether /end completed cleanly.
+
+---
+
+## D-006 — Process: interview coding loop enforced before every problem attempt
+
+**Decided:** 2026-05-25
+
+**What:** Before any problem attempt (D2 solo, D3 retrieval, D4 review), the 8-step interview coding loop is surfaced explicitly and the user must work through each step before opening the editor: (1) restate problem, (2) name pattern and why, (3) state target complexity, (4) trace on paper with one edge case, (5) state the invariant, (6) code, (7) trace one edge case through the code before submitting, (8) derive complexity and confirm it matches step 3.
+
+**Rationale:** User self-identified in W3 D5 retrospective that implementation feels disconnected from the interview context. The loop replicates the structure of a real coding round — treating every attempt as "first time in an interview." It also directly addresses the recurring `static_cast` and variable-shadowing bugs, which trace to coding before the invariant is fully understood.
+
+**Flip-condition:** User reaches M1 (W4) and reports the loop feels mechanical rather than reinforcing. At that point, compress to a 3-step check (pattern, complexity, invariant) for Easy problems; full 8 steps for Medium and Hard.
+
+---
+
+## D-007 — Curriculum: LC#76 Minimum Window Substring deferred from W3
+
+**Decided:** 2026-05-25
+
+**What:** LC#76 (Hard, sliding window + hash map counting) was not attempted in W3. W3 closed with only the Easy (LC#121) and Medium (LC#3). LC#76 is deferred to a later spaced-retrieval slot.
+
+**Rationale:** W3 time budget was consumed by: D1 pattern intro + LC#121 trace, D2 solo attempts on both problems, D3 retrieval + LC#121 confirmation, D4 code review of both solutions, D5 acceptance test + retrospective. Adding LC#76 would have required a sixth day or compressing D3/D5. The Medium (LC#3) was the priority — it exercises the full variable-length sliding window with hash map state, which is the core W3 skill. LC#76 adds a second map (need/have counting) but doesn't introduce a new pattern.
+
+**Flip-condition:** Resurface LC#76 as a Hard-difficulty problem in W4–W6 spaced retrieval, or as the interleaved Hard in W6 (Queues + monotonic queue week), where the sliding window + map state combination is directly relevant.
