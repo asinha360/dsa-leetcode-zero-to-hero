@@ -58,18 +58,18 @@ class Solution {
 public:
     int maxProfit(vector<int>& prices) {
         
-        int l = 0 ; int r = 1; int max = 0;
+        int l = 0 ; int r = 1; int max_profit = 0;
 
-        while (r < prices.size()){
+        while (r < static_cast<int>(prices.size())){
             if (prices[r] < prices[l]){
                 l = r;
             }   else {
-                max = std::max(max, prices[r] - prices[l]);
+                max_profit = std::max(max_profit, prices[r] - prices[l]);
             }
             r++;
         }
         
-        return max;
+        return max_profit;
 
     }
 };

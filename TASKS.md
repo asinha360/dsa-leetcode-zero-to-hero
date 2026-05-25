@@ -9,16 +9,17 @@ the audit trail.
 ---
 
 ## Now
-- **W3 Day 4 (1.0h)** — Open cold with LC#3 s[l] retrieval (must score 2 before code review begins). Then code review LC#121 and LC#3; user derives complexity first. STL fluency: `.find` vs `.contains` vs `.count`.
+- **W3 Day 5 (0.5h)** — Open cold with LC#3 s[l] over-shrink question (must score 2 before acceptance test begins). Then acceptance test LC#121 and LC#3 (re-run on LeetCode to confirm fixes pass). Retrospective. /end.
 
 ---
 
 ## Next
-- **W3 Day 5 (0.5h)** — Acceptance test. Retrospective. PROGRESS.md. /sync.
+*(none — W4 Binary Search starts after W3 D5 retrospective)*
 
 ---
 
 ## Done
+- **2026-05-24** — W3 Day 4 complete. Code review LC#3 and LC#121. Blocking fixes: signed/unsigned `static_cast<int>(s.size())` (recurring — 3rd time) and variable shadowing (`map`→`char_pos`, `max`→`max_profit`). STL fluency: `.count`/`.find`/`.contains` answered. Retrieval: W3 P1 s[l] over-shrink=1.5 (full explanation given; invariant understood but not cold); W1 LC#11 pointer direction=2 (one nudge). notes/w3_d4.md created.
 - **2026-05-23** — W3 Day 3 complete. LC#121 Accepted confirmed (212/212, 0ms, 100% runtime). Retrieval: LC#3 s[l] mechanism=1.5, LC#15 inner-skip=2 [FIRST TIME] (four sessions to close), LC#3 std::max backward-jump=1. notes/w3_d3.md created.
 - **2026-05-22** — W3 Day 2 complete. LC#121 correct solution derived (Accepted unconfirmed — carry-forward to D3). LC#3 Accepted 988/988 — hashset (21ms) and hashmap optimization (4ms, 73rd percentile). Complexity derivations correct on both. notes/w3_d2.md created.
 - **2026-05-22** — W3 Day 1 complete. Sliding window pattern intro. Monotone property derived: permanently suboptimal buy day eliminated when l advances. LC#121 traced on paper; bug found and fixed (l=r not l++). W1 spaced retrieval (LC#15 inner-skip): score 1.5 open → corrected. notes/w3_d1.md created.

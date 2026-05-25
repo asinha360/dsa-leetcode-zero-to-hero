@@ -61,16 +61,16 @@ public:
         // std::unordered_set<char> set;
 
         int l = 0; int r = 0; int max_length = 0;
-        std::unordered_map<char, int> map;
-        while (r < s.size()){
+        std::unordered_map<char, int> char_pos;
+        while (r < static_cast<int>(s.size())){
             // while (set.contains(s[r])){
             //     set.erase(s[l]);
             //     l++;
             // }
-            if (map.count(s[r])) {
-                l = std::max(l, map[s[r]] + 1);
+            if (char_pos.count(s[r])) {
+                l = std::max(l, char_pos[s[r]] + 1);
             }
-            map[s[r]] = r;
+            char_pos[s[r]] = r;
             // set.emplace(s[r]);
             max_length = std::max(max_length, r - l + 1);
             r++;
