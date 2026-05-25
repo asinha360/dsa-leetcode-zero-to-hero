@@ -13,25 +13,18 @@ the most recent **"Wins"** entry, to use as the commit summary. If neither
 is found, ask the user: *"One-line summary for the commit message?"* and
 wait for the answer before continuing.
 
-## 2. Stage and inspect
+## 2. Stage, commit, and push
 
-Run these git commands in sequence:
+Run:
 
 ```bash
-git add solutions/ notes/ PROGRESS.md TASKS.md
+git add solutions/ notes/ PROGRESS.md TASKS.md DECISIONS.md README.md
 git status --short
 ```
 
-Show the user the staged output. If `git status --short` returns nothing,
-report **"Nothing to commit. Working tree clean."** and exit cleanly — do
-not proceed to step 3.
+If `git status --short` returns nothing, report **"Nothing to commit. Working tree clean."** and exit cleanly.
 
-Otherwise ask: **"Commit and push this? (yes/no)"** and wait for the
-answer.
-
-## 3. If yes — commit and push
-
-Run:
+Otherwise, commit and push immediately — no confirmation prompt:
 
 ```bash
 git commit -m "Session [today's date]: [week and day] — [summary]"
@@ -43,17 +36,7 @@ Use the actual date (YYYY-MM-DD), the active week and day from `TASKS.md`
 
 Report: **"Committed and pushed. [N] files. Message: [commit message]"**
 
-## 4. If no — clear the staging area
-
-Run:
-
-```bash
-git reset HEAD solutions/ notes/ PROGRESS.md TASKS.md
-```
-
-Report: **"Staged changes cleared. Nothing was committed."**
-
-## 5. If `git push` fails (no remote set)
+## 3. If `git push` fails (no remote set)
 
 Report the error. Then show the user the exact commands to add a remote:
 

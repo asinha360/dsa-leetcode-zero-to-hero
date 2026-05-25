@@ -112,6 +112,8 @@ ending, run /sync?"
 
 **Flip-condition:** If the /end disable/re-enable mechanism proves brittle (e.g., /end crashes between Step 0 and Step 8, leaving the guard disabled), revisit. Alternative: a flag-file check if hookify adds filesystem-condition support. Or: a stop hook that re-enables the guard automatically on session end regardless of whether /end completed cleanly.
 
+**Superseded 2026-05-25:** Guard file deleted and Step 0/Step 8 removed from /end. Rule now relies on model compliance with CLAUDE.md section 12. The /sync yes/no confirmation was also removed — /sync now auto-commits and pushes.
+
 ---
 
 ## D-006 — Process: interview coding loop enforced before every problem attempt
