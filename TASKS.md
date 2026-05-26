@@ -9,16 +9,18 @@ the audit trail.
 ---
 
 ## Now
-- **W4 Day 1 (1h)** — Binary search pattern intro from first principles. Before session, re-read the YTM bisection solver from cpp-finance-zero-to-hero to activate the curriculum overlap. No keyboard until loop invariant (`l ≤ r` vs `l < r`) and mid calculation are traced on paper.
+- **W4 Day 3 (0.5h)** — Retrieval practice. Three prompts, written, closed-book: (1) W4 P1 — loop invariant source of off-by-one in binary search; (2) LC#33 which-half-sorted logic + range check condition; (3) W3 P3 — LC#3 `std::max` backward-jump invariant (score 1 carry-forward). Open with: "In LC#875, as eating speed increases, what happens to total hours needed — and why does that property make binary search valid on the speed range?"
 
 ---
 
 ## Next
-*(none — W4 Binary Search starts after W3 D5 retrospective)*
+*(none)*
 
 ---
 
 ## Done
+- **2026-05-26** — W4 Day 2 complete. LC#33 Search in Rotated Sorted Array — Accepted (196/196, 0ms, 100% runtime). 4 bugs fixed (r=size off-by-one, else-if→else, wrong inequality direction in right-half check, missing return -1). O(log n) time, O(1) space. LC#875 Koko Eating Bananas — Accepted (127/127, 10ms). long long overflow fix. O(n log M) time, O(1) space. Complexity: O(log n) revised to O(n log M) after probing — answer-space direction (1.5, resurface D3). notes/w4_d2.md created.
+- **2026-05-26** — W4 Day 1 complete. Binary search pattern intro from first principles via YTM bisection bridge. Loop invariant ("target in [l,r]"), loop condition (l≤r), update rules (mid±1), overflow-safe mid derived through Socratic questioning. LC#704 Accepted (47/47, 0ms, 100% runtime). O(log n) time, O(1) space. W3 P1 spaced retrieval: score 2 (durable — complete causal chain cold). notes/w4_d1.md created.
 - **2026-05-25** — W3 Day 5 complete. Acceptance test: LC#121 (212/212, 0ms, 100% runtime) and LC#3 (988/988, 7ms) — both Accepted. Retrieval: W3 P1 s[l] over-shrink=2 [FIRST TIME] (set-mirrors-window invariant stated cold — four sessions to close). Retrospective done. Interview coding loop process change logged (D-006). README updated. W3 marked complete. notes/w3_d5.md created.
 - **2026-05-24** — W3 Day 4 complete. Code review LC#3 and LC#121. Blocking fixes: signed/unsigned `static_cast<int>(s.size())` (recurring — 3rd time) and variable shadowing (`map`→`char_pos`, `max`→`max_profit`). STL fluency: `.count`/`.find`/`.contains` answered. Retrieval: W3 P1 s[l] over-shrink=1.5 (full explanation given; invariant understood but not cold); W1 LC#11 pointer direction=2 (one nudge). notes/w3_d4.md created.
 - **2026-05-23** — W3 Day 3 complete. LC#121 Accepted confirmed (212/212, 0ms, 100% runtime). Retrieval: LC#3 s[l] mechanism=1.5, LC#15 inner-skip=2 [FIRST TIME] (four sessions to close), LC#3 std::max backward-jump=1. notes/w3_d3.md created.
